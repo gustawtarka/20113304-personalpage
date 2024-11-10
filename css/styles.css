@@ -1,159 +1,175 @@
-body{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,117,101,1) 56%, rgba(24,245,168,1) 100%);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(70, 117, 101, 1) 56%,
+    rgba(24, 245, 168, 1) 100%
+  );
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-h1{
-    font-size: 60px;
-    display:flex;
-    align-items: center;
-    color: #45A080;
-    margin-right: 3%;
+h1 {
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+
+  padding: 0px;
+  color: #45a080;
+  margin-right: 3%;
+  margin-top: 0;
+}
+main {
+  display: flex;
+  align-items: center;
+}
+main li {
+  color: #18f5a8;
+  list-style-type: none;
+  padding: 3px;
+}
+.page {
+  margin: 5%;
+  background-color: rgb(40, 40, 40);
+  border-radius: 20px;
+}
+blockquote {
+  color: #7622ca;
+  font-style: italic;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  width: 90%;
+  justify-content: space-between;
+}
+.items #left-side-about {
+  display: inherit;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(20, 20, 20);
+}
+.items main {
+  width: 50%;
+  display: inherit;
+  flex-direction: column;
+}
+h2,
+p {
+  margin-right: 5%;
+  color: #45a080;
+  margin-left: 5%;
+  text-align: center;
+}
+nav a {
+  padding: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgba(118, 34, 202, 1);
+}
+nav a:hover {
+  text-decoration: double;
+  text-align: center;
+  color: #18f5a8;
+  background-color: rgb(40, 40, 40);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 30px;
+}
+#image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#image figure {
+  width: 550px;
+  height: 550px;
+  margin-left: 4%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border-radius: 290px;
+  background-color: #7622ca;
+  background-image: url(../images/me.png);
+}
+table {
+  width: 100%;
+  flex-shrink: 1;
+}
+tbody tr td:hover {
+  background-image: url(../images/tableBG.png);
+  color: whitesmoke;
+}
+tr:nth-of-type(even) {
+  background-color: #18f5a8;
+}
+tr:nth-of-type(odd) {
+  background-color: #45a080;
 }
 
-.page{
-    margin:5%;
-    background-color: rgb(40, 40, 40);
-    border-radius: 20px;
-    
+#projects {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
-blockquote{
-    color:#7622CA;
-    font-style: italic;
+#projects h3 {
+  justify-content: space-around;
+  width: 33.33333%;
+  align-items: stretch;
 }
-.items{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
-    width: 90%;
-    justify-content: space-between;
+#projects ul {
+  align-items: flex-end;
+  align-items: stretch;
 }
-.items #left-side-about{
-
-    display: inherit;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
+footer {
+  background-color: rgb(40, 40, 40);
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-nav{
-    display: flex;
-    flex-grow: 1;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(20, 20, 20)
-
+footer figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.items main{
-    width: 50%;
-    display: inherit;
-    flex-direction: column;
+nav a:active {
+  color: rgb(40, 40, 40);
+  font-size: 25px;
 }
-h2, p{
-    margin-right: 5%;   
-    color: #45A080;
-    margin-left: 5%;
-    text-align: center;
-}
-nav a{
-    padding: 5px;
-    font-size: 25px;
-    text-decoration: none;
-    color: rgba(118, 34, 202, 1);
-
-}
-nav a:hover{
-    text-decoration: double;
-    text-align: center;
-    color: #18F5A8;
-    background-color: rgb(40, 40, 40);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    font-size: 30px;
-
-}
-#image figure{
-    width: 550px;
-    height: 550px;
-    margin-left: 4%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    border-radius: 290px;
-    background-color: #7622CA;
-    background-image: url(../images/me.png);
-
-}
-table{
-    width: 100%;
-    flex-shrink: 1;
-
-}
-tbody tr td:hover{
-    background-image: url(../images/tableBG.png);
-    color: whitesmoke;
-}
-tr:nth-of-type(even){
-    background-color: #18F5A8;
-}
-tr:nth-of-type(odd){
-    background-color: #45A080;
+nav a:visited {
+  font-style: italic;
 }
 
-#projects{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-
+footer #linkedin,
+#github,
+#instagram {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
 }
-#projects h3{
-    justify-content: space-around;
-    width: 33.33333%;
-    align-items: stretch;
+figcaption,
+figcaption a {
+  font-size: 10px;
+  font-style: italic;
+  color: rgb(70, 70, 70);
+  padding: 2px;
+  text-decoration: none;
 }
-#projects ul{
-    align-items: flex-end;
-    align-items: stretch;
-}
-footer{
-    background-color: rgb(40, 40, 40);
-    width: 90%;
-    margin-left: 5%;
-    border-radius: 15px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-footer figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-nav a:active{
-    color: rgb(40, 40, 40);
-    font-size: 25px;
-}
-nav a:visited{
-    font-style:italic;
-}
-
-footer #linkedin, #github, #instagram{
-    display: inherit;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px;
-}
-figcaption, figcaption a{
-    font-size: 10px;
-    font-style: italic;
-    color: rgb(70, 70, 70);
-    padding: 2px;
-    text-decoration: none;
-
-}
-
